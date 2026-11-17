@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2012 Znuny GmbH, https://znuny.com/
 # --
-# $origin: Znuny - 2acbc11790726af75000f3c382fd1a0860fbbc4b - Kernel/Modules/AdminType.pm
+# $origin: Znuny - bae2fb28ba2e90d82f5f4915b2ef0274cd350138 - Kernel/Modules/AdminType.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -16,7 +16,7 @@ use warnings;
 use utf8;
 
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
@@ -49,7 +49,7 @@ sub Run {
         $TypeNotActive = $LayoutObject->Notify(
             Priority => 'Error',
             Data     => $LayoutObject->{LanguageObject}->Translate( "Please activate %s first!", "Type" ),
-            Link =>
+            Link     =>
                 $LayoutObject->{Baselink}
                 . 'Action=AdminSystemConfiguration;Subaction=View;Setting=Ticket%3A%3AType',
         );

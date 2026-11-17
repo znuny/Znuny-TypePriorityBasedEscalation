@@ -2,7 +2,7 @@
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
 # Copyright (C) 2012 Znuny GmbH, https://znuny.com/
 # --
-# $origin: Znuny - 4cf40286149a04dc09d9973fcd484bc5ddfe5b22 - Kernel/Modules/AdminPriority.pm
+# $origin: Znuny - bae2fb28ba2e90d82f5f4915b2ef0274cd350138 - Kernel/Modules/AdminPriority.pm
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -13,10 +13,9 @@ package Kernel::Modules::AdminPriority;
 
 use strict;
 use warnings;
-use utf8;
 
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
