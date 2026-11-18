@@ -21,7 +21,7 @@ This package extends Znuny with type and priority based escalations.
 
 **Prerequisites**
 
-- Znuny 7.3
+- Znuny 7.5
 
 **Installation**
 
